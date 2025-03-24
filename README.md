@@ -24,7 +24,7 @@ The server does not have any user interface, but it is multi-threaded. Each inco
 ### Client
 The client has a simple user interface. When the client is started, the computer name and shared folder path are passed as command-line arguments. The client then shows a split screen showing two
 lists (`Jlist`). Both lists consist of filenames. On the left are the list of all files in the clients local folder. On the right will be the list of files in the shared folder of the server.
-
+##
 When an `UPLOAD` or `DOWNLOAD` occurs, the user interface will need to refresh both lists of files to show  the newly uploaded or downloaded file. 
 
 When the Refresh button is pressed, a `DIR` command is sent to the server to refresh the server list.
