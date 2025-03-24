@@ -247,6 +247,6 @@ public class ClientUI extends JFrame {
 
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Client2.ClientUI2().setVisible(true));
+        SwingUtilities.invokeLater(() -> new Client.ClientUI().setVisible(true));
     }
 }
