@@ -1,4 +1,5 @@
-package Client;
+package Client2;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -7,7 +8,7 @@ import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.Socket;
 
-public class ClientUI extends JFrame {
+public class ClientUI2 extends JFrame {
     private JList<String> localFileList;
     private JList<String> remoteFileList;
     private JButton downloadButton;
@@ -15,11 +16,11 @@ public class ClientUI extends JFrame {
     private JButton refreshButton;
     private DefaultListModel<String> localListModel;
     private DefaultListModel<String> remoteListModel;
-    private static final String SHARED_FOLDER = "src/main/java/Client/Files";
+    private static final String SHARED_FOLDER = "src/main/java/Client2/Files";
     private static final String SERVER_IP = "localhost"; // Change if needed
     private static final int SERVER_PORT = 5000;
 
-    public ClientUI() {
+    public ClientUI2() {
         setTitle("File Sharing Client");
         setSize(700, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -247,6 +248,6 @@ public class ClientUI extends JFrame {
 
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Client2.ClientUI2().setVisible(true));
+        SwingUtilities.invokeLater(() -> new ClientUI2().setVisible(true));
     }
 }
